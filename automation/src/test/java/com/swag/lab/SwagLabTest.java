@@ -19,6 +19,8 @@ public class SwagLabTest {
     @BeforeEach
     public void initDriver() {
         driver = new ChromeDriver();
+        // set max size windows
+        driver.manage().window().maximize();
     }
 
     @AfterEach
